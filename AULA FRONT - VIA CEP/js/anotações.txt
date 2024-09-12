@@ -1,0 +1,28 @@
+[] -> Array(Listas)
+Ex: nomes['André', 'Maria', 'Luiz', 'Ana']
+//nomeia o indicie atributo que vai trazer do json 
+
+console.log(nomes[2])
+
+{ } -> JSON
+ex: nomes{ nome: 'André', telefone; '123456789', data_nascimento; '01/10/2000' }
+//guardar atributos do indicie da array
+console.log(nomes.nome)
+console.log(nomes.telefone)
+
+listaDeClientes = [
+    { nome: 'André', 
+        telefone: [
+                    { numero: '156456465' },
+                    {numero:'156456465'}], data_nascimento: '01/10/2000' },
+
+
+    { nome: 'Luiz', telefone: '156456465', data_nascimento: '04/09/1989' },
+    { nome: 'maria', telefone: '156456465', data_nascimento: '22/10/2002' }
+]
+
+console.log(listaDeClientes[2].nome)
+console.log(listaDeClientes[0].telefone[0].numero)
+console.log(listaDeClientes[0].telefone[1].numero)
+
+
